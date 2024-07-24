@@ -1,15 +1,14 @@
 package com.PicConnect.myapplication.UI.Home.FragmentOfHome;
 
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-import androidx.viewpager2.widget.ViewPager2;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.widget.ViewPager2;
 
 import com.PicConnect.myapplication.CustomAdapter.ImagePagerAdapter;
 import com.PicConnect.myapplication.R;
@@ -36,6 +35,8 @@ public class MainFragment extends Fragment {
         imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
         imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
         // Thêm các hình ảnh khác vào danh sách
+
+        //dđâsa
 
         // Tạo adapter và gán cho ViewPager2
         ImagePagerAdapter adapter = new ImagePagerAdapter(getContext(), imageResources);
