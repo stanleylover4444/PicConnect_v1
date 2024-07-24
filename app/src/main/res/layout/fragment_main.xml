@@ -4,28 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- ViewPager2 -->
+    <!-- ViewPager2 chính cho nền -->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/black"/>
 
-
+    <!-- ViewPager2 nhỏ hơn cho ảnh, đặt ở giữa -->
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/imageViewPager"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_gravity="center"/>
+        android:layout_height="450dp"
+        android:background="@drawable/rounded_frame"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        />
 
-    <!-- LinearLayout chứa ba ImageButton -->
+
+    <!-- LinearLayout chứa ba ImageButton, đặt ở trên cùng -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="16dp"
-        android:layout_marginTop="20dp">
+        android:layout_gravity="top">
 
         <ImageButton
             android:id="@+id/mSettingBtn"
@@ -52,16 +56,14 @@
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
 
-    <!-- Nút cố định -->
-
+    <!-- LinearLayout chứa ba ImageButton cố định, đặt ở dưới cùng -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:paddingTop="16dp"
-        android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="16dp">
+        android:padding="16dp"
+        android:layout_gravity="bottom">
 
         <ImageButton
             android:id="@+id/mPhotoBtn"
@@ -87,6 +89,5 @@
             android:src="@drawable/baseline_account_circle_24"
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
-
 
 </FrameLayout>

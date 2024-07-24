@@ -36,7 +36,7 @@ public class MainFragment extends Fragment {
         imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
         // Thêm các hình ảnh khác vào danh sách
 
-        //dđâsa
+
 
         // Tạo adapter và gán cho ViewPager2
         ImagePagerAdapter adapter = new ImagePagerAdapter(getContext(), imageResources);
