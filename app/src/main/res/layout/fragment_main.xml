@@ -11,15 +11,15 @@
         android:layout_height="match_parent"
         android:background="@color/black"/>
 
-    <!-- ViewPager2 nhỏ hơn cho ảnh, đặt ở giữa -->
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/imageViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:background="@drawable/rounded_frame"
-        android:layout_gravity="center"
-        android:layout_marginBottom="30dp"
-        />
+
+<!--    <androidx.viewpager2.widget.ViewPager2-->
+<!--        android:id="@+id/imageViewPager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="450dp"-->
+<!--        android:background="@drawable/rounded_frame"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        />-->
 
 
     <!-- LinearLayout chứa ba ImageButton, đặt ở trên cùng -->
