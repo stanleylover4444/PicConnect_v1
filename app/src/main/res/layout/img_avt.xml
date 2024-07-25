@@ -20,7 +20,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/avta"
         tools:ignore="MissingConstraints"
-        app:shapeAppearanceOverlay="@style/roundedImageArtistView"
+        app:shapeAppearanceOverlay="@style/avtchatroundedImageArtistView"
         />
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:text="Tên người dùng"
         android:textColor="@android:color/white"
-        android:textSize="15dp"
+        android:textSize="15sp"
         android:textStyle="bold"
         android:visibility="visible"
         tools:layout_editor_absoluteX="64dp"

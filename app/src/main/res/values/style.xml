@@ -1,0 +1,31 @@
+<resources>
+    <style name="roundedImageArtistView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">56dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+    <style name="smallroundedImageArtistView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+    <style name="avtchatroundedImageArtistView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+    <style name="HistorychatroundedImageArtistView">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+
+    <style name="TakepicroundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+
+
+
+</resources>

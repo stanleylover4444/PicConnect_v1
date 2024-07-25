@@ -1,12 +1,11 @@
-package com.PicConnect.myapplication.UI.Home.FragmentOfHome;
+package com.PicConnect.myapplication.UI.Chat.FragnentOfChat;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.fragment.app.Fragment;
 
 import com.PicConnect.myapplication.R;
 

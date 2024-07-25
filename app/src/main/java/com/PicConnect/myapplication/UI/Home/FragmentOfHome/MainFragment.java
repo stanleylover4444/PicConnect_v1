@@ -32,8 +32,8 @@ public class MainFragment extends Fragment {
 
         // Tạo danh sách hình ảnh
         List<Integer> imageResources = new ArrayList<>();
-        imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
-        imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.back_gr); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.back_gr); // Thay đổi tên hình ảnh
         // Thêm các hình ảnh khác vào danh sách
 
 

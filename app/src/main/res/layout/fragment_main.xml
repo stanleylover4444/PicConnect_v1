@@ -2,7 +2,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <!-- ViewPager2 chính cho nền -->
     <androidx.viewpager2.widget.ViewPager2
@@ -12,82 +13,42 @@
         android:background="@color/black"/>
 
 
-<!--    <androidx.viewpager2.widget.ViewPager2-->
-<!--        android:id="@+id/imageViewPager"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="450dp"-->
-<!--        android:background="@drawable/rounded_frame"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:layout_marginBottom="30dp"-->
-<!--        />-->
-
-
     <!-- LinearLayout chứa ba ImageButton, đặt ở trên cùng -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="16dp"
-        android:layout_gravity="top">
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp">
 
-        <ImageButton
-            android:id="@+id/mSettingBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_circle_24"
-            android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgArtist"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/smallroundedImageArtistView"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avta"
+            tools:ignore="MissingConstraints" />
         <ImageButton
             android:id="@+id/mFriendBtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="36dp"
             android:src="@drawable/baseline_account_circle_24"
-            android:layout_marginEnd="8dp"
             android:paddingHorizontal="140dp"
             android:background="?attr/selectableItemBackgroundBorderless"/>
 
         <ImageButton
             android:id="@+id/mChatBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
             android:src="@drawable/baseline_account_circle_24"
             android:background="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
 
-    <!-- LinearLayout chứa ba ImageButton cố định, đặt ở dưới cùng -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="16dp"
-        android:layout_gravity="bottom">
 
-        <ImageButton
-            android:id="@+id/mPhotoBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_circle_24"
-            android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
 
-        <ImageButton
-            android:id="@+id/mTakePicBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_circle_24"
-            android:layout_marginEnd="8dp"
-            android:paddingHorizontal="140dp"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-
-        <ImageButton
-            android:id="@+id/mShareBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/baseline_account_circle_24"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-    </LinearLayout>
 
 </FrameLayout>
