@@ -29,30 +29,30 @@ public class ImagePagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
     @Override
     public int getItemViewType(int position) {
         if (position == 0) {
-            return VIEW_TYPE_IMAGE;
-        } else {
             return VIEW_TYPE_TAKE_PIC;
+        } else {
+            return VIEW_TYPE_IMAGE;
         }
     }
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        if (viewType == VIEW_TYPE_IMAGE) {
-            View view = LayoutInflater.from(context).inflate(R.layout.item_image, parent, false);
+        if (viewType == VIEW_TYPE_TAKE_PIC) {
+            View view = LayoutInflater.from(context).inflate(R.layout.viewpager_takeipc, parent, false);
             return new ImageViewHolder(view);
         } else {
-            View view = LayoutInflater.from(context).inflate(R.layout.item_take_pic, parent, false);
+            View view = LayoutInflater.from(context).inflate(R.layout.viewpager_img, parent, false);
             return new TakePicViewHolder(view);
         }
     }
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-        if (getItemViewType(position) == VIEW_TYPE_IMAGE) {
+        if (getItemViewType(position) == VIEW_TYPE_TAKE_PIC) {
             ((ImageViewHolder) holder).imageView.setImageResource(imageResources.get(position));
-        } else {
-            // Handle takePicView binding logic if needed
+        } else  {
+//            ((ImageViewHolder) holder).imageView.setImageResource(imageResources.get(position));
         }
     }
 
@@ -63,19 +63,23 @@ public class ImagePagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
 
     static class ImageViewHolder extends RecyclerView.ViewHolder {
         ImageView imageView;
+        ImageView imageView1;
 
         ImageViewHolder(View itemView) {
             super(itemView);
-            imageView = itemView.findViewById(R.id.imageView);
+            imageView = itemView.findViewById(R.id.takepic_backgroundView);
+
+
+            imageView1 = itemView.findViewById(R.id.img_backgroundView);
         }
     }
 
     static class TakePicViewHolder extends RecyclerView.ViewHolder {
-        // Define takePicView components
+        // Định nghĩa các thành phần của takePicView
 
         TakePicViewHolder(View itemView) {
             super(itemView);
-            // Initialize takePicView components
+            // Khởi tạo các thành phần của takePicView
         }
     }
 }

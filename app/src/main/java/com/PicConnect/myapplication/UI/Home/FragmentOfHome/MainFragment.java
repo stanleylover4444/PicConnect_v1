@@ -34,10 +34,10 @@ public class MainFragment extends Fragment {
         List<Integer> imageResources = new ArrayList<>();
         imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
         imageResources.add(R.drawable.songuku); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.back_gr); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.songuku); // Thay đổi tên hình ảnh
         // Thêm các hình ảnh khác vào danh sách
-
-
-
 
         // Tạo adapter và gán cho ViewPager2
         ImagePagerAdapter adapter = new ImagePagerAdapter(getContext(), imageResources);
