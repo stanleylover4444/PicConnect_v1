@@ -22,10 +22,24 @@
 
     <style name="TakepicroundedImage">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">30dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+        <item name="cornerSize">20dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+    <style name="avtTakepicroundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">15dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
+
+    <style name="takepicImghave">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">60dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
     </style>
 
 
 
+    <style name="takepic1">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">25dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+    </style>
 
 </resources>

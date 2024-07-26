@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/black"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+         />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="220dp"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:padding="4dp"
+            app:shapeAppearanceOverlay="@style/avtTakepicroundedImage"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avta" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/fonttext"
+            android:paddingHorizontal="3dp"
+            android:textSize="16dp"
+            android:text="Tên USE   "
+            android:textColor="@android:color/white"
+            android:textFontWeight="700" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50ph"
+            android:textSize="16dp"
+            android:textColor="#7E7E7E"
+            android:fontFamily="@font/fonttext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/mPhotoBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_filter_24"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_marginHorizontal="100dp"
+            app:strokeColor="#BC910F"
+            app:strokeWidth="4dp"
+            android:padding="4dp"
+            app:shapeAppearanceOverlay="@style/TakepicroundedImage"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/avta" />
+
+        <ImageButton
+            android:id="@+id/mShareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_ios_share_24"
+            android:background="?attr/selectableItemBackgroundBorderless" />
+    </LinearLayout>
+
+    <!-- Lớp phủ với lỗ tròn chính giữa màn hình -->
+
+
+</FrameLayout>

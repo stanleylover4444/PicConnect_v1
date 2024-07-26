@@ -1,96 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#E91E63"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E91E63">
+
+
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:scaleType="centerCrop">
 
     </ImageView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.8" />
 
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imageViewPager"
         android:layout_width="match_parent"
         android:layout_height="400dp"
-        android:background="@drawable/rounded_frame"
         android:layout_gravity="center"
         android:layout_marginBottom="60dp"
-        />
+        android:scaleType="centerCrop"
+        android:src="@drawable/avta"
+        app:shapeAppearanceOverlay="@style/takepicImghave" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="30dp"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgArtist"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/avta"
+            app:shapeAppearanceOverlay="@style/smallroundedImageArtistView" />
+
+        <ImageButton
+            android:id="@+id/mFriendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:paddingHorizontal="140dp"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <ImageButton
+            android:id="@+id/mChatBtn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_account_circle_24" />
+    </LinearLayout>
 
     <!-- LinearLayout chứa ba ImageButton cố định, đặt ở dưới cùng -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:padding="16dp"
+        android:layout_gravity="bottom"
         android:layout_marginBottom="180dp"
-        android:layout_gravity="bottom">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
         <ImageButton
             android:id="@+id/mPhotoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_insert_photo_24"
             android:layout_marginEnd="8dp"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_insert_photo_24" />
+
+
+
 
         <com.google.android.material.imageview.ShapeableImageView
-
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:layout_centerInParent="true"
-            android:scaleType="centerCrop"
-            android:layout_marginHorizontal="100dp"
-            app:strokeColor="#BC910F"
-
-            app:strokeWidth="4dp"
-            android:padding="4dp"
-            app:shapeAppearanceOverlay="@style/TakepicroundedImage"
             android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="100dp"
+            android:padding="4dp"
+
+            android:scaleType="centerCrop"
             android:src="@drawable/avta"
-            />
+            app:shapeAppearanceOverlay="@style/takepic1"
+            app:strokeColor="#BD8F1C"
+            app:strokeWidth="3dp" />
 
         <ImageButton
             android:id="@+id/mShareBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_loop_24"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_loop_24" />
     </LinearLayout>
 
     <LinearLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp"
+        android:layout_gravity="bottom"
         android:layout_marginBottom="50dp"
-        android:layout_gravity="bottom">
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Horizontal LinearLayout for ImageView and TextView -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
 
             <!-- ImageView to the left -->
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="42dp"
                 android:layout_height="42dp"
-                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp"
 
-                app:shapeAppearanceOverlay="@style/HistorychatroundedImageArtistView"
+                android:scaleType="centerCrop"
                 android:src="@drawable/avta"
-                android:layout_marginEnd="8dp"/>
+                app:shapeAppearanceOverlay="@style/HistorychatroundedImageArtistView" />
 
             <!-- TextView to the right of ImageView -->
             <TextView
@@ -99,19 +143,17 @@
                 android:fontFamily="@font/fonttext"
                 android:text="Lịch sử"
                 android:textColor="@android:color/white"
-                android:textSize="24sp"/>
+                android:textSize="24sp" />
         </LinearLayout>
 
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            android:layout_gravity="center"
             android:layout_marginTop="8dp"
-            android:layout_gravity="center"/>
+            android:src="@drawable/baseline_keyboard_arrow_down_24" />
     </LinearLayout>
-
-
 
 
 </FrameLayout>

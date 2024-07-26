@@ -10,7 +10,11 @@
         android:id="@+id/viewPager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/black"/>
+        android:background="@color/white"/>
+
+
+
+
 
 
     <!-- LinearLayout chứa ba ImageButton, đặt ở trên cùng -->
@@ -19,34 +23,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+
         android:layout_gravity="top"
         android:layout_marginTop="30dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imgArtist"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_centerInParent="true"
-            android:scaleType="centerCrop"
-            app:shapeAppearanceOverlay="@style/smallroundedImageArtistView"
-            android:layout_gravity="center_horizontal"
-            android:src="@drawable/avta"
-            tools:ignore="MissingConstraints" />
-        <ImageButton
-            android:id="@+id/mFriendBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_account_circle_24"
-            android:paddingHorizontal="140dp"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-
-        <ImageButton
-            android:id="@+id/mChatBtn"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_account_circle_24"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
     </LinearLayout>
+
+
 
 
 
