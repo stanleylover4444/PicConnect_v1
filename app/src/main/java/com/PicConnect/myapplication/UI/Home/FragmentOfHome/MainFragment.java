@@ -32,15 +32,19 @@ public class MainFragment extends Fragment {
 
         // Tạo danh sách hình ảnh
         List<Integer> imageResources = new ArrayList<>();
-        imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.deptrai); // Thay đổi tên hình ảnh
         imageResources.add(R.drawable.songuku); // Thay đổi tên hình ảnh
         imageResources.add(R.drawable.avta); // Thay đổi tên hình ảnh
-        imageResources.add(R.drawable.back_gr); // Thay đổi tên hình ảnh
         imageResources.add(R.drawable.songuku); // Thay đổi tên hình ảnh
+        imageResources.add(R.drawable.baki); // Thay đổi tên hình ảnh
         // Thêm các hình ảnh khác vào danh sách
 
+        List<Integer> imgViewTakePic = new ArrayList<>();
+        imgViewTakePic.add(R.drawable.baki);
+
+
         // Tạo adapter và gán cho ViewPager2
-        ImagePagerAdapter adapter = new ImagePagerAdapter(getContext(), imageResources);
+        ImagePagerAdapter adapter = new ImagePagerAdapter(getContext(), imageResources , imgViewTakePic);
         viewPager2.setAdapter(adapter);
 
         // Cài đặt hướng của ViewPager2

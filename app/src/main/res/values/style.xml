@@ -39,7 +39,7 @@
 
     <style name="takepic1">
         <item name="cornerFamily">rounded</item>
-        <item name="cornerSize">25dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
+        <item name="cornerSize">28dp</item> <!-- Giảm một chút so với viền để đảm bảo bo tròn -->
     </style>
 
 </resources>

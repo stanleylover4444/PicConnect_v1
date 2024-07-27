@@ -12,58 +12,15 @@
         android:scaleType="centerCrop">
 
     </ImageView>
-    <View
+
+
+    <com.PicConnect.myapplication.Components.TransparentSquareView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000000"
-        android:alpha="0.8" />
+        android:layout_gravity="center"/>
 
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/imageViewPager"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/avta"
-        app:shapeAppearanceOverlay="@style/takepicImghave" />
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="top"
-        android:layout_marginTop="30dp"
-
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/imgArtist"
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center_horizontal"
-            android:scaleType="centerCrop"
-            android:src="@drawable/avta"
-            app:shapeAppearanceOverlay="@style/smallroundedImageArtistView" />
-
-        <ImageButton
-            android:id="@+id/mFriendBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:paddingHorizontal="140dp"
-            android:src="@drawable/baseline_account_circle_24" />
-
-        <ImageButton
-            android:id="@+id/mChatBtn"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/baseline_account_circle_24" />
-    </LinearLayout>
 
     <!-- LinearLa   yout chứa ba ImageButton cố định, đặt ở dưới cùng -->
     <LinearLayout
