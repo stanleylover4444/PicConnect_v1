@@ -6,38 +6,30 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.PicConnect.myapplication.CustomAdapter.ChatListAdapter;
+import com.PicConnect.myapplication.DTOS.ChatDTO;
 import com.PicConnect.myapplication.R;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ChatFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+
 public class ChatFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private RecyclerView rcvItemChat;
+    private ChatListAdapter chatListAdapter;
 
     public ChatFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment ChatFragment.
-     */
-    // TODO: Rename and change types and number of parameters
     public static ChatFragment newInstance(String param1, String param2) {
         ChatFragment fragment = new ChatFragment();
         Bundle args = new Bundle();
@@ -57,9 +49,46 @@ public class ChatFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+        View view = inflater.inflate(R.layout.fragment_chat, container, false);
+
+        // Find the RecyclerView in the inflated layout
+        rcvItemChat = view.findViewById(R.id.rcv_itemchat);
+
+        // Initialize the adapter
+        chatListAdapter = new ChatListAdapter(getContext());
+
+
+
+
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false);
+
+        // Set up the RecyclerView
+        rcvItemChat.setLayoutManager(linearLayoutManager);
+        chatListAdapter.setData(getArraylistTimeChat());
+        rcvItemChat.setAdapter(chatListAdapter);
+
+
+
+
+        return view;
+    }
+
+
+    private ArrayList<ChatDTO> getArraylistTimeChat(){
+
+        ArrayList<ChatDTO>chatDTOArrayList = new ArrayList<>();
+        chatDTOArrayList.add(new ChatDTO("Thành Danh " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+
+        return chatDTOArrayList;
     }
 }

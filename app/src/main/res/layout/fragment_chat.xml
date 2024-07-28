@@ -36,11 +36,12 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_itemchat"
         android:layout_marginTop="20dp"
-        android:id="@+id/recyclerViewHome"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/img_avt"
+        tools:listitem="@layout/img_chatfriend"
         android:clipToPadding="false"
         android:scrollbars="vertical"
         android:paddingLeft="10dp"/>
