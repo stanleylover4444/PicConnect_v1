@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#E91E63">
 
+
     <ImageView
         android:id="@+id/takepic_backgroundView"
         android:layout_width="match_parent"
@@ -13,11 +14,15 @@
 
     </ImageView>
 
+<androidx.camera.view.PreviewView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cameraPreview"
+    android:background="@android:color/white"
+    />
 
-<!--    <ImageView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:background="@drawable/avta"/>-->
+
+
 
 
     <com.PicConnect.myapplication.Components.TransparentSquareView
@@ -25,6 +30,31 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"/>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="140dp"
+
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/mFlash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/baseline_flash_on_24" />
+
+
+
+
+
+
+
+    </LinearLayout>
 
 
 
@@ -50,13 +80,13 @@
 
 
         <com.google.android.material.imageview.ShapeableImageView
+           android:id="@+id/mbuttonTakePic"
             android:layout_width="68dp"
             android:layout_height="68dp"
             android:layout_centerInParent="true"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="100dp"
             android:padding="4dp"
-
             android:scaleType="centerCrop"
             android:src="@drawable/avta"
             app:shapeAppearanceOverlay="@style/takepic1"
@@ -64,11 +94,11 @@
             app:strokeWidth="3dp" />
 
         <ImageButton
-            android:id="@+id/mShareBtn"
+            android:id="@+id/mFlipCamera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="?attr/selectableItemBackgroundBorderless"
-            android:src="@drawable/baseline_loop_24" />
+            android:src="@drawable/baseline_flip_camera_android_24" />
     </LinearLayout>
 
     <LinearLayout
@@ -92,7 +122,6 @@
                 android:layout_width="42dp"
                 android:layout_height="42dp"
                 android:layout_marginEnd="8dp"
-
                 android:scaleType="centerCrop"
                 android:src="@drawable/avta"
                 app:shapeAppearanceOverlay="@style/HistorychatroundedImageArtistView" />
