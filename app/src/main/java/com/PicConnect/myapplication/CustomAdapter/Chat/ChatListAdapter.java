@@ -1,4 +1,4 @@
-package com.PicConnect.myapplication.CustomAdapter;
+package com.PicConnect.myapplication.CustomAdapter.Chat;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -33,7 +33,7 @@ public class ChatListAdapter extends RecyclerView.Adapter<ChatListAdapter.ChatFr
     @NonNull
     @Override
     public ChatFriendViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(mContext).inflate(R.layout.img_chatfriend, parent, false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.item_chatfriend, parent, false);
         return new ChatFriendViewHolder(view);
     }
 

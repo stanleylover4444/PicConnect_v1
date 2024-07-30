@@ -1,4 +1,4 @@
-package com.PicConnect.myapplication.CustomAdapter;
+package com.PicConnect.myapplication.CustomAdapter.Home;
 
 import android.view.View;
 import android.widget.ImageView;

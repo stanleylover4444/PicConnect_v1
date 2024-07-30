@@ -60,6 +60,35 @@
             android:fontFamily="@font/fonttext" />
     </LinearLayout>
 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        android:layout_marginBottom="130dp"
+        android:layout_gravity="bottom">
+        <EditText
+            android:id="@+id/EditText_SearchPostCasts"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext"
+            android:drawableEnd="@drawable/baseline_insert_emoticon_24"
+            android:hint="Gửi tin nhắn..."
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+
+            android:fontFamily="@font/fonttext"
+
+
+            android:textSize="16sp" />
+
+        </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -90,6 +119,7 @@
             app:shapeAppearanceOverlay="@style/TakepicroundedImage"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/avta" />
+
 
         <ImageButton
             android:id="@+id/mShareBtn"

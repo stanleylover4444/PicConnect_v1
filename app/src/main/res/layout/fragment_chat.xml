@@ -41,7 +41,7 @@
 
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/img_chatfriend"
+        tools:listitem="@layout/item_chatfriend"
         android:clipToPadding="false"
         android:scrollbars="vertical"
         android:paddingLeft="10dp"/>

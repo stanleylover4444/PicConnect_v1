@@ -1,4 +1,4 @@
-package com.PicConnect.myapplication.CustomAdapter;
+package com.PicConnect.myapplication.CustomAdapter.Home;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,7 +8,6 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.camera.core.AspectRatio;
-import androidx.camera.core.Camera;
 import androidx.camera.core.CameraSelector;
 import androidx.camera.core.Preview;
 import androidx.camera.lifecycle.ProcessCameraProvider;
@@ -141,7 +140,8 @@ public class ImagePagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
                 .build();
 
         cameraProvider.unbindAll();
-        Camera camera = cameraProvider.bindToLifecycle(lifecycleOwner, cameraSelector, preview);
+        //Om camera
+      //  Camera camera = cameraProvider.bindToLifecycle(lifecycleOwner, cameraSelector, preview);
 
         preview.setSurfaceProvider(previewView.getSurfaceProvider());
     }
@@ -168,7 +168,6 @@ public class ImagePagerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHol
             super(itemView);
             imageView = itemView.findViewById(R.id.img_backgroundView);
             imageButtonCallBack = itemView.findViewById(R.id.mButtonCallBack);
-
             imageButtonCallBack.setOnClickListener(v -> adapterCallback.onImageViewClicked());
         }
     }

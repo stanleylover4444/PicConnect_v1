@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.PicConnect.myapplication.CustomAdapter.ChatListAdapter;
+import com.PicConnect.myapplication.CustomAdapter.Chat.ChatListAdapter;
 import com.PicConnect.myapplication.DTOS.ChatDTO;
 import com.PicConnect.myapplication.R;
 
@@ -54,7 +54,7 @@ public class ChatFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
 
         // Find the RecyclerView in the inflated layout
-        rcvItemChat = view.findViewById(R.id.rcv_itemchat);
+            rcvItemChat = view.findViewById(R.id.rcv_itemchat);
 
         // Initialize the adapter
         chatListAdapter = new ChatListAdapter(getContext());
@@ -76,19 +76,19 @@ public class ChatFragment extends Fragment {
     }
 
 
-    private ArrayList<ChatDTO> getArraylistTimeChat(){
+        private ArrayList<ChatDTO> getArraylistTimeChat(){
 
-        ArrayList<ChatDTO>chatDTOArrayList = new ArrayList<>();
-        chatDTOArrayList.add(new ChatDTO("Thành Danh " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
-        chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            ArrayList<ChatDTO>chatDTOArrayList = new ArrayList<>();
+            chatDTOArrayList.add(new ChatDTO("Thành Danh " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
+            chatDTOArrayList.add(new ChatDTO("Nguyễn Trương " , R.drawable.avta , "Anh yêu em" , "10ph trước"));
 
-        return chatDTOArrayList;
-    }
+            return chatDTOArrayList;
+        }
 }

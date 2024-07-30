@@ -7,7 +7,7 @@
 
     <!-- ViewPager2 -->
     <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager_2"
+        android:id="@+id/viewBGMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

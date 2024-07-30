@@ -9,9 +9,9 @@ import com.PicConnect.myapplication.UI.Chat.FragnentOfChat.ChatFragment;
 import com.PicConnect.myapplication.UI.Home.FragmentOfHome.MainFragment;
 import com.PicConnect.myapplication.UI.Setting.FragmentOfSetting.SettingFragment;
 
-public class ViewPager2AdapterHor extends FragmentStateAdapter {
+public class FragmentAdapter extends FragmentStateAdapter {
 
-    public ViewPager2AdapterHor(@NonNull FragmentActivity fragmentActivity) {
+    public FragmentAdapter(@NonNull FragmentActivity fragmentActivity ) {
         super(fragmentActivity);
     }
 
